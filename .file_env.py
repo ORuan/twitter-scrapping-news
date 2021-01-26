@@ -1,1 +1,0 @@
-URL = "https://twitter.com/explore/tabs/trending/"
