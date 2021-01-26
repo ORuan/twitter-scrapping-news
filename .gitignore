@@ -1,0 +1,5 @@
+.env
+.seln_data
+__pycache__
+*.db
+.file_env
