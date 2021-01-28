@@ -1,7 +1,7 @@
 # Twitter BOT Scrapping
 By Ruan
 ---
-- Notices more fasts doing many advantages :)
+- Faster news will do a lot difference :)
 ### Objectives
 - Monitoring Trending Topics of Twitter WebSite at searching news now
 - Create a WebSite that display and a EmailNewsLetter with warning in each update
