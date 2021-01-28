@@ -11,6 +11,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent
 
 class TwitterScrappingBot():
     def initialization(self):
+        print("[*] The analyzs starting")
         try:
             _path = chromedriver_autoinstaller.install()
         except Exception as err:
@@ -43,9 +44,7 @@ class TwitterScrappingBot():
                                                             return Array.prototype.slice.call(content)
                                                         };return _get();
                                                         """)
-        while True:
-            pass
-        print(content_trending)
+        print(len(content_trending))
         #btn_news_path = "//*[@id=\"react-root\"]/div/div/div[2]/main/div/div/div/div/div/div[1]/div[2]/nav/div/div[2]/div/div[4]/a"
         #content_news = self.instance.find_element_by_xpath(btn_news_path)
         #print(content_news)
@@ -56,4 +55,3 @@ class TwitterScrappingBot():
         sleep(3)
         self.monitoring()
 
-TwitterScrappingBot().open()
