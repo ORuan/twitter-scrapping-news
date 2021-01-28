@@ -36,8 +36,24 @@ class TwitterScrappingBot():
     def __init__(self):
         self.instance = self.initialization()
 
-    
+    def monitoring(self):
+        content_trending = self.instance.execute_script("""function _get(){
+                                                            document.body.style.zoom='25%'
+                                                            content = document.querySelectorAll('.css-1dbjc4n.r-16y2uox.r-bnwqim')
+                                                            return Array.prototype.slice.call(content)
+                                                        };return _get();
+                                                        """)
+        while True:
+            pass
+        print(content_trending)
+        #btn_news_path = "//*[@id=\"react-root\"]/div/div/div[2]/main/div/div/div/div/div/div[1]/div[2]/nav/div/div[2]/div/div[4]/a"
+        #content_news = self.instance.find_element_by_xpath(btn_news_path)
+        #print(content_news)
+
+
     def open(self):
-        self.instance.get(URL)  
-        sleep(5)    
-        self.instance.close()
+        self.instance.get(URL)
+        sleep(3)
+        self.monitoring()
+
+TwitterScrappingBot().open()
