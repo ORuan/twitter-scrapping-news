@@ -1,4 +1,3 @@
-from settings import BASE_DIR   
 from datetime import datetime
 
 
@@ -8,4 +7,4 @@ def commit_errors(erro):
         with open(f'{BASE_DIR}/.seln.log', 'a') as logging:
             logging.writelines(f'ERROR: {erro} -- {datetime.now().strftime("%H:%M:%S")}\n')
     except Exception as err:
-        throw(erro)
+        raise(erro)
