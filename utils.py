@@ -1,10 +1,14 @@
 from datetime import datetime
+from pathlib import Path
 
 
-def commit_errors(erro):
+BASE_DIR = Path(__file__).resolve(strict=True).parent
+
+
+def commit_errors(erro, file_):
     print(f'ERROR: {erro} -- {datetime.now().strftime("%H:%M:%S")}')
     try:
-        with open(f'{BASE_DIR}/.seln.log', 'a') as logging:
-            logging.writelines(f'ERROR: {erro} -- {datetime.now().strftime("%H:%M:%S")}\n')
+        with open(f'{BASE_DIR}/.bf4.log', 'a') as logging:
+            logging.writelines(f'ERROR in {file_}: {erro} -- {datetime.now().strftime("%H:%M:%S")}\n')
     except Exception as err:
-        raise(erro)
+        print(err)

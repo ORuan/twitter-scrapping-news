@@ -1,11 +1,7 @@
-autopep8==1.5.4
-click==7.1.2
+autopep8==1.5
+beautifulsoup4==4.9.3
 DataBaseManager==0.0.8
-itsdangerous==1.1.0
-Jinja2==2.11.2
 Languages==1.0.0
-MarkupSafe==1.1.1
 pycodestyle==2.6.0
-toml==0.10.2
+soupsieve==2.1
 urllib3==1.26.2
-Werkzeug==1.0.1

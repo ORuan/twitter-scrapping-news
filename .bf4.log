@@ -1,0 +1,34 @@
+ERROR: <class 'KeyboardInterrupt'> -- 10:04:47
+ERROR: 'module' object is not callable -- 10:04:57
+ERROR: 'module' object is not callable -- 10:05:27
+ERROR: name 'headers' is not defined -- 10:07:19
+ERROR: can't concat str to bytes -- 10:07:35
+ERROR: can't concat str to bytes -- 10:08:47
+ERROR: can't concat str to bytes -- 10:09:22
+ERROR: can't concat str to bytes -- 10:10:19
+ERROR: can't concat str to bytes -- 10:10:55
+ERROR: can't concat str to bytes -- 10:12:52
+ERROR: can't concat str to bytes -- 10:14:46
+ERROR: <class 'KeyboardInterrupt'> -- 10:57:31
+ERROR: <class 'KeyboardInterrupt'> -- 11:02:23
+ERROR: <class 'KeyboardInterrupt'> -- 11:06:24
+ERROR in <built-in function __import__>: <class 'KeyboardInterrupt'> -- 11:10:29
+ERROR in /home/cryfzs/Projects/twitter.scraping/controller.py: <urlopen error [Errno 104] Connection reset by peer> -- 11:11:16
+ERROR in <built-in function __import__>: <class 'KeyboardInterrupt'> -- 11:13:32
+ERROR in /home/cryfzs/Projects/twitter.scraping/controller.py: 'str' object has no attribute 'find_all' -- 11:14:41
+ERROR in /home/cryfzs/Projects/twitter.scraping/controller.py: 'str' object has no attribute 'find_all' -- 11:14:45
+ERROR in <built-in function __import__>: <class 'KeyboardInterrupt'> -- 11:14:45
+ERROR in <built-in function __import__>: <class 'KeyboardInterrupt'> -- 11:15:15
+ERROR in <built-in function __import__>: <class 'KeyboardInterrupt'> -- 11:15:41
+ERROR in <built-in function __import__>: <class 'KeyboardInterrupt'> -- 12:40:06
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:16:33
+ERROR in /home/cryfzs/Projects/twitter.scraping/controller.py: name 'soup' is not defined -- 14:16:48
+ERROR in /home/cryfzs/Projects/twitter.scraping/controller.py: name 'soup' is not defined -- 14:17:02
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:17:05
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:17:39
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:20:02
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:20:43
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:22:14
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:22:24
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:22:33
+ERROR in /home/cryfzs/Projects/twitter.scraping/main.py: <class 'KeyboardInterrupt'> -- 14:22:51

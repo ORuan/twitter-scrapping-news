@@ -1,12 +1,14 @@
 #!.env/bin/python3
 import threading
-from controller import MyServer, webServer, Monitor
+from controller import Monitor
+from webserver.server import MyServer, webServer
 from http.server import HTTPServer
-from controller import URL
 from utils import commit_errors
 
+
+
 if __name__ == "__main__":        
-    monitor_server = Monitor(URL)
+    monitor_server = Monitor()
     monitor_server.process()
     
     th_monitor = threading.Thread(target=monitor_server.monitoring_daemon, daemon=True)
@@ -15,7 +17,10 @@ if __name__ == "__main__":
     try:
         webServer.serve_forever()
     except KeyboardInterrupt:
-        commit_errors(KeyboardInterrupt)
-        pass
+        commit_errors(KeyboardInterrupt, __file__)
+        
+    except Exception as err:
+        commit_errors(err, __file__)
+
     webServer.server_close()
     print("Server stopped.")
