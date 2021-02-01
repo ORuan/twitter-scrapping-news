@@ -9,7 +9,6 @@ from utils import commit_errors
 
 if __name__ == "__main__":        
     monitor_server = Monitor()
-    monitor_server.process()
     
     th_monitor = threading.Thread(target=monitor_server.monitoring_daemon, daemon=True)
     th_monitor.start()
@@ -18,7 +17,6 @@ if __name__ == "__main__":
         webServer.serve_forever()
     except KeyboardInterrupt:
         commit_errors(KeyboardInterrupt, __file__)
-        
     except Exception as err:
         commit_errors(err, __file__)
 
